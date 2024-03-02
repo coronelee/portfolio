@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'KodeMonoBold';
+  src: url('/fonts/KodeMono-Bold.ttf');
+}
+@font-face {
+  font-family: 'KodeMonoMedium';
+  src: url('/fonts/KodeMono-Medium.ttf');
+}
+@font-face {
+  font-family: 'KodeMonoRegular';
+  src: url('/fonts/KodeMono-Regular.ttf');
+}
+@font-face {
+  font-family: 'KodeMonoSemiBold';
+  src: url('/fonts/KodeMono-SemiBold.ttf');
+}
