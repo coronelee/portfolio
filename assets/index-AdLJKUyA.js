@@ -3,7 +3,7 @@
   if (t && t.supports && t.supports("modulepreload")) return;
   for (const r of document.querySelectorAll('link[rel="modulepreload"]')) s(r);
   new MutationObserver((r) => {
-    for (const o of r)
+    for (const o of r) 
       if (o.type === "childList")
         for (const i of o.addedNodes)
           i.tagName === "LINK" && i.rel === "modulepreload" && s(i);
