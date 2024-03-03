@@ -17,3 +17,11 @@
   font-family: 'KodeMonoSemiBold';
   src: url('/fonts/KodeMono-SemiBold.ttf');
 }
+@font-face {
+  font-family: 'KellySlab';
+  src: url('/fonts/KellySlab-Regular.ttf');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/Ubuntu-Medium.ttf');
+}

@@ -6,7 +6,9 @@ export default {
       KodeBold: ['KodeMonoBold', 'sans-serif'],
       KodeMedium: ['KodeMonoMedium', 'sans-serif'],
       KodeRegular: ['KodeMonoRegular', 'sans-serif'],
-      KodeSemiBold: ['KodeMonoSemiBold', 'sans-serif']
+      KellySlab: ['KellySlab', 'sans-serif'],
+      KodeSemiBold: ['KodeMonoSemiBold', 'sans-serif'],
+      Ubuntu: ['Ubuntu', 'sans-serif']
     },
     extend: {
       keyframes: {
@@ -17,6 +19,15 @@ export default {
         bgWhite: {
           '0%': { height: 0, width: 0 },
           '100%': { height: '100%', width: '100%' }
+        },
+        pulsation: {
+          '0%': { transform: 'translateX(0px)' },
+          '1%': { transform: 'rotate(45deg)' },
+          '100%': { transform: 'translateX(100px) ' }
+        },
+        openMenu: {
+          '0%': { height: '0px', width: '0px' },
+          '100%': { height: 'screen', width: 'screen' }
         }
       }
     }
