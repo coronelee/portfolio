@@ -9,7 +9,7 @@
 :before,
 :after {
   --tw-content: "";
-}
+} 
 html,
 :host {
   line-height: 1.5;
