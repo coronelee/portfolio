@@ -20,7 +20,18 @@ onMounted(() => {
   )
   observerTarget.observe(document.getElementById('trigger'))
 
-  setTimeout(() => {}, 10000)
+  const observerItem = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          document.getElementById('imageMe').style.opacity = '1'
+          document.getElementById('aboutMeContent').style.opacity = '1' 
+        }
+      })
+    },
+    { threshold: 0.5 }
+  )
+observerItem.observe(document.getElementById('imageMe'))
 })
 const editPage = (btn) => {
   if (btn == 0) {
@@ -36,14 +47,16 @@ const editPage = (btn) => {
 </script>
 <template>
   <div
-    class="w-screen h-screen bg-white [&>div]:h-full flex font-KellySlab border-b border-[#00000066]"
+    class="w-screen h-screen [&>div]:h-full flex font-KellySlab border-b bg-[#060918] border-[#00000066] transition-all duration-1000"
     id="aboutme"
   >
     <div
-      class="h-full bg-[#060918] w-3/5 bg-[url('../glob/me.jpg')] bg-right bg-cover bg-no-repeat max-[1200px]:hidden"
+      class="h-full bg-[#060918] w-3/5 bg-[url('../glob/me.jpg')]  bg-right bg-cover bg-no-repeat max-[1200px]:hidden opacity-0 transition-all duration-500"
+      id="imageMe"
     ></div>
     <div
-      class="relative bg-[#060918] w-3/5 flex items-center justify-start px-12 max-[1200px]:w-full"
+      class="relative bg-[#060918] w-3/5 flex items-center justify-start px-12 max-[1200px]:w-full opacity-0 transition-all duration-500"
+      id="aboutMeContent"
     >
       <div class="text-white flex flex-col gap-12">
         <div class="flex max-[1200px]:justify-center gap-20 text-sm max-[400px]:gap-4">

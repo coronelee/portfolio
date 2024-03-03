@@ -7,6 +7,17 @@ onMounted(() => {
   //   clientH.value = window.innerHeight
   //   document.getElementById('works').style.top = `${clientH.value * 2}px`
   axios.get('https://86e772c40d27ca73.mokky.dev/works').then((res) => (works.value = res))
+  const observerItem = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          document.getElementById('works').style.opacity = '1' 
+        }
+      })
+    },
+    { threshold: 0.5 }
+  )
+observerItem.observe(document.getElementById('works'))
 })
 
 const openHref = (href) => {
@@ -15,7 +26,7 @@ const openHref = (href) => {
 </script>
 <template>
   <div
-    class="w-screen h-auto py-12 bg-[#060918] flex flex-col justify-center items-center gap-12"
+    class="w-screen h-auto py-12 bg-[#060918] flex flex-col justify-center items-center gap-12 opacity-0 transition-all duration-1000"
     id="works"
   >
     <div

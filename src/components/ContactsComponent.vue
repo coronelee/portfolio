@@ -5,6 +5,18 @@ import { onMounted } from 'vue'
 onMounted(() => {
   //   clientH.value = window.innerHeight
   //   document.getElementById('contacts').style.top = `${clientH.value * 3}px`
+
+  const observerItem = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          document.getElementById('contacts').style.opacity = '1' 
+        }
+      })
+    },
+    { threshold: 0.5 }
+  )
+observerItem.observe(document.getElementById('contacts'))
 })
 const hireMe = () => {
   const tgInput = document.getElementById('tg')
@@ -23,7 +35,7 @@ const hireMe = () => {
 </script>
 <template>
   <div
-    class="w-screen h-auto bg-[#060918] flex flex-col justify-center items-center gap-12"
+    class="w-screen h-auto bg-[#060918] flex flex-col justify-center items-center gap-12 opacity-0 transition-all duration-1000"
     id="contacts"
   >
     <div
