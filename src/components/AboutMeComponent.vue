@@ -31,7 +31,7 @@ onMounted(() => {
     },
     { threshold: 0.5 }
   )
-observerItem.observe(document.getElementById('imageMe'))
+observerItem.observe(document.getElementById('aboutMeContent'))
 })
 const editPage = (btn) => {
   if (btn == 0) {
