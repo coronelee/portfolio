@@ -583,10 +583,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 .bg-\[url\(\'main\.svg\'\)\] {
-  background-image: url("'main.svg'");
+  background-image: url("../main.svg");
 }
 .bg-\[url\(\'me\.jpg\'\)\] {
-  background-image: url("'me.jpg'");
+  background-image: url("../me.jpg");
 }
 .bg-cover {
   background-size: cover;
@@ -765,27 +765,27 @@ video {
 }
 @font-face {
   font-family: KodeMonoBold;
-  src: url("fonts/KodeMono-Bold.ttf");
+  src: url("../fonts/KodeMono-Bold.ttf");
 }
 @font-face {
   font-family: KodeMonoMedium;
-  src: url("fonts/KodeMono-Medium.ttf");
+  src: url("../fonts/KodeMono-Medium.ttf");
 }
 @font-face {
   font-family: KodeMonoRegular;
-  src: url("fonts/KodeMono-Regular.ttf");
+  src: url("../fonts/KodeMono-Regular.ttf");
 }
 @font-face {
   font-family: KodeMonoSemiBold;
-  src: url("fonts/KodeMono-SemiBold.ttf");
+  src: url("../fonts/KodeMono-SemiBold.ttf");
 }
 @font-face {
   font-family: KellySlab;
-  src: url("fonts/KellySlab-Regular.ttf");
+  src: url("../fonts/KellySlab-Regular.ttf");
 }
 @font-face {
   font-family: Ubuntu;
-  src: url("fonts/Ubuntu-Medium.ttf");
+  src: url("../fonts/Ubuntu-Medium.ttf");
 }
 @keyframes logo {
   0%,

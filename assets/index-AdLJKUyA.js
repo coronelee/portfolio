@@ -3458,11 +3458,11 @@ function dc(e) {
 function hc(e) {
   return Y(e) ? document.querySelector(e) : e;
 }
-const pc = "hamburger.svg",
-  mc = "close.svg",
-  bo = "social/tg.svg",
-  yo = "social/vk.svg",
-  xo = "social/gmail.svg",
+const pc = "../hamburger.svg",
+  mc = "../close.svg",
+  bo = "../social/tg.svg",
+  yo = "../social/vk.svg",
+  xo = "../social/gmail.svg",
   gc = {
     class:
       "w-8/12 max-[530px]:w-16 max-[530px]:top-2 max-[530px]:left-10 py-2 px-4 rounded-full transition-all duration-500 flex items-center justify-between m-auto font-KellySlab fixed text-white z-10 top-[5%] left-1/2 -translate-x-1/2",
@@ -3615,7 +3615,7 @@ const pc = "hamburger.svg",
             "div",
             {
               class:
-                "bg-[url('main.svg')] w-full h-full bg-no-repeat bg-cover bg-center bg-fixed scale-110 font-KellySlab relative flex items-center justify-center flex-col gap-24 max-[425px]:gap-8",
+                "bg-[url('../main.svg')] w-full h-full bg-no-repeat bg-cover bg-center bg-fixed scale-110 font-KellySlab relative flex items-center justify-center flex-col gap-24 max-[425px]:gap-8",
               id: "main",
               onMousemove: n,
             },
@@ -3635,7 +3635,7 @@ const pc = "hamburger.svg",
     "div",
     {
       class:
-        "h-full bg-[#060918] w-3/5 bg-[url('me.jpg')] bg-right bg-cover bg-no-repeat max-[1200px]:hidden",
+        "h-full bg-[#060918] w-3/5 bg-[url('../me.jpg')] bg-right bg-cover bg-no-repeat max-[1200px]:hidden",
     },
     null,
     -1
