@@ -40,7 +40,7 @@ const editPage = (btn) => {
     id="aboutme"
   >
     <div
-      class="h-full bg-[#060918] w-3/5 bg-[url('/me.jpg')] bg-right bg-cover bg-no-repeat max-[1200px]:hidden"
+      class="h-full bg-[#060918] w-3/5 bg-[url('../glob/me.jpg')] bg-right bg-cover bg-no-repeat max-[1200px]:hidden"
     ></div>
     <div
       class="relative bg-[#060918] w-3/5 flex items-center justify-start px-12 max-[1200px]:w-full"
@@ -61,7 +61,7 @@ const editPage = (btn) => {
             class="px-4 cursor-pointer relative py-2 bg-[#100a30] rounded-full border uppercase border-[#6919ff] text-[#6919ff] overflow-hidden"
             @click="editPage(1)"
           >
-            <span>мои умения</span>
+            <span>мой стек</span>
             <div
               class="w-[4px] h-full bg-[#ffffff] blur-md rotate-45 animate-[pulsation_3s_ease_infinite] hidden absolute top-0 left-0"
               id="btn1"

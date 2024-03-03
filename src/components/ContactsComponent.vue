@@ -45,9 +45,9 @@ const hireMe = () => {
           >
           <span>или свяжитесь со мной сами:</span>
           <span class="[&>a>img]:w-10 flex justify-end gap-4 max-[750px]:justify-center">
-            <a href="https://t.me/yourantosha"><img src="/social/tg.svg" alt="" /></a>
-            <a href="https://vk.com/6old6"> <img src="/social/vk.svg" alt="" /></a>
-            <a href="mailto:tacontactta@gmail.com"><img src="/social/gmail.svg" alt="" /></a>
+            <a href="https://t.me/yourantosha"><img src="../social/tg.svg" alt="" /></a>
+            <a href="https://vk.com/6old6"> <img src="../social/vk.svg" alt="" /></a>
+            <a href="mailto:tacontactta@gmail.com"><img src="../social/gmail.svg" alt="" /></a>
           </span>
         </div>
         <div

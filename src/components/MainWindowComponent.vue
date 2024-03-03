@@ -14,7 +14,7 @@ const handleScroll = (event) => {
 <template>
   <div class="overflow-hidden w-full h-screen relative h-full">
     <div
-      class="bg-[url('/main.svg')] w-full h-full bg-no-repeat bg-cover bg-center bg-fixed scale-110 font-KellySlab relative flex items-center justify-center flex-col gap-24 max-[425px]:gap-8"
+      class="bg-[url('../glob/main.svg')] w-full h-full bg-no-repeat bg-cover bg-top bg-fixed scale-110 font-KellySlab relative flex items-center justify-center flex-col gap-24 max-[425px]:gap-8"
       id="main"
       @mousemove="handleScroll"
     >

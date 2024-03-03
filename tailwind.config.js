@@ -23,7 +23,7 @@ export default {
         pulsation: {
           '0%': { transform: 'translateX(0px)' },
           '1%': { transform: 'rotate(45deg)' },
-          '100%': { transform: 'translateX(100px) ' }
+          '100%': { transform: 'translateX(160px) ' }
         },
         openMenu: {
           '0%': { height: '0px', width: '0px' },
