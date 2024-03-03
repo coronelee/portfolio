@@ -1,6 +1,6 @@
 <script setup>
 import axios from 'axios'
-import { onMounted, ref } from 'vue'
+import { onMounted } from 'vue'
 // const clientH = ref(0)
 onMounted(() => {
   //   clientH.value = window.innerHeight
