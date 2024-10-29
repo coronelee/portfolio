@@ -99,7 +99,7 @@ const editPage = (btn) => {
             <span>css</span>
             <span>scss</span>
             <span>javascript</span>
-            <span>reactss</span>
+            <span>reactjs</span>
             <span>git</span>
             <span>figma</span>
             <span>gimp</span>
@@ -111,12 +111,16 @@ const editPage = (btn) => {
             <span>cross-browser</span>
             <span>vue</span>
             <span>tailwindcss</span>
+            <span>docker</span>
+
           </div>
           <b>Знаком с:</b>
           <div class="flex flex-wrap gap-4">
             <span>typescript</span>
             <span>mysql</span>
             <span>nextjs</span>
+            <span>vuex</span>
+            <span>cозданием библиотек для npm</span>
           </div>
         </div>
       </div>
